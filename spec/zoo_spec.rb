@@ -59,6 +59,7 @@ RSpec.describe Animal do
     zoo.add_animal(animal_2)
 
     expect(zoo.inventory).to eq([animal_1, animal_2])
+    expect(zoo.animal_count).to eq(2)
   end
 
 

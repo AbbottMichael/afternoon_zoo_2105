@@ -13,5 +13,6 @@ class Zoo
 
   def add_animal(animal)
     @inventory << animal
+    @animal_count = @inventory.length
   end
 end
