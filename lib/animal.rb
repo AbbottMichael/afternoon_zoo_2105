@@ -12,4 +12,9 @@ class Animal
     age_days[0].to_i * 7
   end
 
+  def feed!(food_lbs)
+    fed = weight.split(" ")
+    fed = fed[0].to_i + food_lbs
+    @weight = "#{fed} pounds"
+  end
 end
