@@ -15,4 +15,8 @@ class Zoo
     @inventory << animal
     @animal_count = @inventory.length
   end
+
+  def animals_older_than(age_limit)
+    inventory.find_all { |animal| animal.age_in_days / 7 > age_limit }
+  end
 end
